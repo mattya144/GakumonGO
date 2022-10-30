@@ -1,0 +1,23 @@
+.QandA {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 10px;
+}
+
+.QandA__text {
+  overflow-wrap: break-word;
+
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+
+  letter-spacing: 0.05em;
+
+  color: #000000;
+}

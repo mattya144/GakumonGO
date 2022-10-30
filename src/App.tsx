@@ -9,6 +9,9 @@ import GakumonHeader from './components/GakumonHeader/GakumonHeader';
 import GakumonCard from './components/GakumonCard/GakumonCard';
 import SideBarHeader from './components/SideBarHeader/SideBarHeader';
 import SideBar from './components/SideBar/SideBar';
+import QandATitle from './components/QandATitle/QandATitle';
+import Input from './components/Input/Input';
+import QandA from './components/QandA/QandA';
 
 const App = () => {
   const [count, setCount] = useState(0);
@@ -25,6 +28,9 @@ const App = () => {
       />
       <SideBarHeader />
       <SideBar />
+      <QandATitle text='aiueotext' />
+      <Input />
+      <QandA gakumonId='s1280136' />
       <div>
         <a href="https://vitejs.dev" rel="noreferrer" target="_blank">
           <img src="/vite.svg" className="logo" alt="Vite logo" />

@@ -1,0 +1,18 @@
+.QandATitle {
+  width: fit-content;
+  border-bottom: 2px solid #079B94;
+}
+
+.QandATitle__text {
+  width: fit-content;
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: 0.05em;
+
+  color: #000000;
+}
