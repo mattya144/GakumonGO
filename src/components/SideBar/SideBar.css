@@ -8,5 +8,6 @@
   width: 400px;
   height: 100%;
 
+  overflow: scroll;
   background: #FFFFFF;
 }
