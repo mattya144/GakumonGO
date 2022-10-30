@@ -1,0 +1,59 @@
+.GakumonHeader {
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 8px 24px;
+  gap: 24px;
+
+  width: 100%;
+  height: 56px;
+
+  /* White_a40 */
+
+  background: rgba(255, 255, 255, 0.4);
+  /* Primary_solid */
+
+  border-bottom: 4px solid #079B94;
+}
+
+.GakumonHeader__gakumonId {
+  height: 100%;
+
+  /* Title_description */
+
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 40px;
+  /* identical to box height, or 200% */
+
+  letter-spacing: 0.05em;
+
+  /* Text */
+
+  color: #505A64;
+}
+
+.GakumonHeader__gakumonName {
+  height: 100%;
+
+  /* Title_description */
+
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 40px;
+  /* identical to box height, or 200% */
+
+  letter-spacing: 0.05em;
+
+  /* Text */
+
+  color: #505A64;
+}

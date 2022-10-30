@@ -1,0 +1,64 @@
+.GakumonCard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px;
+  gap: 16px;
+
+  width: 328px;
+  height: auto;
+
+  /* Secondary_solid */
+
+  background: #FFFFFF;
+  border-radius: 50px;
+
+  /* 本来は__gakumonIdとかに持たせたいのですが ::focus の関係上、仕方なくここに置いています*/
+  color: #505A64;
+}
+
+.GakumonCard:hover {
+  border-color: #F9C023;
+}
+
+.GakumonCard:focus {
+  outline-width: 0px;
+  background: #F9C023;
+  color: #FFFFFF;
+}
+
+.GakumonCard__icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-size: cover;
+  background-image: url("/src/assets/avatar.svg");
+}
+
+.GakumonCard__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.GakumonCard__gakumonId {
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: 0.05em;
+}
+
+.GakumonCard__gakumonName {
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: 0.05em;
+}
