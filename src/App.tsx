@@ -8,6 +8,7 @@ import TextBlock from './components/TextBlock/TextBlock';
 import GakumonHeader from './components/GakumonHeader/GakumonHeader';
 import GakumonCard from './components/GakumonCard/GakumonCard';
 import SideBarHeader from './components/SideBarHeader/SideBarHeader';
+import SideBar from './components/SideBar/SideBar';
 
 const App = () => {
   const [count, setCount] = useState(0);
@@ -23,6 +24,7 @@ const App = () => {
         gakumonName='matumoto1234'
       />
       <SideBarHeader />
+      <SideBar />
       <div>
         <a href="https://vitejs.dev" rel="noreferrer" target="_blank">
           <img src="/vite.svg" className="logo" alt="Vite logo" />
