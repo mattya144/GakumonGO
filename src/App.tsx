@@ -13,12 +13,14 @@ import QandATitle from './components/QandATitle/QandATitle';
 import Input from './components/Input/Input';
 import QandA from './components/QandA/QandA';
 import useDialog from './hooks/useDialog/useDialog';
+import HomePage from './pages/HomePage';
 
 const App = () => {
 
   return (
     <div className="App">
-      <Avatar />
+      <HomePage />
+      {/* <Avatar />
       <TextBlock text='aiueo kakikueko saishisueso' />
       <GakumonHeader gakumonId='s1280136' gakumonName='hogehogehoge' />
       <GakumonCard
@@ -30,7 +32,7 @@ const App = () => {
       <SideBar />
       <QandATitle text='aiueotext' />
       <Input />
-      <QandA gakumonId='s1280136' />
+      <QandA gakumonId='s1280136' /> */}
     </div>
   );
 };

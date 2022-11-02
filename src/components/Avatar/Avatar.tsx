@@ -1,9 +1,15 @@
 import React from 'react';
 import './Avatar.css';
 
-const Avatar: React.FC = ()  => {
+type AvatarProps = {
+  imageUrl: string;
+};
+
+const Avatar: React.FC<AvatarProps> = ({
+  imageUrl
+})  => {
   return (
-    <div className='Avatar' />
+    <img src={imageUrl} className='Avatar' />
   )
 };
 

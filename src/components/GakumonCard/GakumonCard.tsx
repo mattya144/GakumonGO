@@ -1,20 +1,26 @@
 import React from 'react';
 import useDialog from '../../hooks/useDialog/useDialog';
 import './GakumonCard.css';
+import Gakumon from '../../types/Gakumon';
 
 type GakumonCardProps = {
-  imageUrl: string;
-  gakumonId: string;
-  gakumonName: string;
+  gakumon: Gakumon;
+  setSelectedGakumon: (gakumon: Gakumon) => void;
 };
 
 const GakumonCard: React.FC<GakumonCardProps> = ({
-  imageUrl, gakumonId, gakumonName
+  gakumon, setSelectedGakumon
 }) => {
   const {
     Dialog,
     openDialog,
   } = useDialog();
+
+  const {
+    gakumonId,
+    gakumonName,
+    imageUrl,
+  } = gakumon;
 
   return (
     <>
@@ -22,7 +28,7 @@ const GakumonCard: React.FC<GakumonCardProps> = ({
 
       <button
         className='GakumonCard'
-        onClick={openDialog}
+        onClick={() => {openDialog(); setSelectedGakumon(gakumon);}}
       >
         <img src={imageUrl} className='GakumonCard__icon' />
         <div className='GakumonCard__text'>

@@ -1,7 +1,7 @@
 type Gakumon = {
-  imageUrl?: string;
+  imageUrl: string;
   gakumonId: string;
-  gakumonName?: string;
+  gakumonName: string;
 };
 
 export default Gakumon;
