@@ -1,0 +1,13 @@
+.HeaderLeftStyle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px;
+    gap: 12px;
+}
+
+.HeaderLeftText{
+    color:#F9C023;
+}
+

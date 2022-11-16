@@ -1,8 +1,5 @@
-import React, { useState } from 'react';
-import reactLogo from './assets/react.svg';
+import React from 'react';
 import './App.css';
-import './components/Avatar/Avatar';
-import './components/TextBlock/TextBlock';
 import Avatar from './components/Avatar/Avatar';
 import TextBlock from './components/TextBlock/TextBlock';
 import GakumonHeader from './components/GakumonHeader/GakumonHeader';
@@ -16,7 +13,6 @@ import useDialog from './hooks/useDialog/useDialog';
 import HomePage from './pages/HomePage';
 
 const App = () => {
-
   return (
     <div className="App">
       <HomePage />
@@ -24,15 +20,16 @@ const App = () => {
       <TextBlock text='aiueo kakikueko saishisueso' />
       <GakumonHeader gakumonId='s1280136' gakumonName='hogehogehoge' />
       <GakumonCard
-        imageUrl='https://pbs.twimg.com/profile_images/1486326538304102400/9hYziRCJ_400x400.jpg'
-        gakumonId='s1280136'
-        gakumonName='matumoto1234'
+        imageUrl="https://pbs.twimg.com/profile_images/1486326538304102400/9hYziRCJ_400x400.jpg"
+        gakumonId="s1280136"
+        gakumonName="matumoto1234"
       />
       <SideBarHeader />
       <SideBar />
-      <QandATitle text='aiueotext' />
+      <QandATitle text="aiueotext" />
       <Input />
       <QandA gakumonId='s1280136' /> */}
+      <QandA gakumonId="s1280136" />
     </div>
   );
 };
